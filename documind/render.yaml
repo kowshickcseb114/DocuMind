@@ -1,8 +1,10 @@
+
 services:
   - type: web
     name: documind
     runtime: docker
     plan: free
+    rootDir: documind
     dockerfilePath: ./backend/Dockerfile
     dockerContext: .
     healthCheckPath: /api/health
